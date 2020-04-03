@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+<form id="form1" method="POST" >
+
+<label for="email">EMAIL</label><br>
+<input type="text" name="email" id="email" ><br>
+
+<label for="rss">RSS</label><br>
+<input name="rss"  id="rss"><br>
+
+<label for="debug" >Debug</label><br>
+<textarea id="debug" name="debug" ></textarea><br>
+
+<label for="rsslist" >RSS list</label><br>
+<textarea id="rsslist"  name="rsslist"></textarea><br>
+<div id="response"></div>
+<input id="save-button" type="submit" class="button" formaction="add_rss.php" 	 value="ADD RSS" >
+<input id="get-button" type="submit" class="button" formaction="read_rss.php"     value="READ RSS" />
+<input id="send-button" type="submit" class="button" formaction="send_email.php"  	value="SEND Email" />
+<!--
+<button form="form1" type="button" style="width: 45px;">GET</button>
+<button form="form1" type="button" style="width: 100px; float:right">SEND</button>
+-->
+<!--
+<button type="button" style="width: 120px; float:left">SAVE</button>
+<input type="submit" style="width: 120px; float:right" value="SEND">
+-->
+
+</form>
+
+
+</body>
+</html>
+
+
+
